@@ -1,0 +1,30 @@
+{
+  "name": "myLoL",
+  "version": "1.0.0",
+  "description": "Node js app to get my own LoL data",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simtaxx/myLoL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simtaxx/myLoL/issues"
+  },
+  "homepage": "https://github.com/simtaxx/myLoL#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
