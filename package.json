@@ -1,5 +1,5 @@
 {
-  "name": "myLoL",
+  "name": "API-myLoL",
   "version": "1.0.0",
   "description": "Node js app to get my own LoL data",
   "main": "index.js",
