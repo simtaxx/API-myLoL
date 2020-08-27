@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 
 router.get('/player', async (req, res) => {
   const username = req.query.username
-
+  console.log(username)
   try {
     const userProfil = await axios.get(euUrl + playerIdUrl + username, { params: { api_key: apiKey  } })
     const userId = userProfil.data.id
