@@ -14,6 +14,6 @@ app.set("view engine", "ejs")
 app.set("views", __dirname + "/www")
 app.use(express.static(path.join(__dirname, "www")))
 
-app.listen(port, () => {
-  console.log(`the url is http://localhost:${port}`)
+app.listen(3030, () => {
+  console.log(`the url is http://localhost:3030`)
 })
