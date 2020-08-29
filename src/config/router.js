@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express'
 import axios from 'axios'
 import { apiKey } from './config'
 
