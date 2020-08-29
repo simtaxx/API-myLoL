@@ -20,10 +20,11 @@ router.get('/player', async (req, res) => {
     const userProfil = await getUser(username)
     const userId = userProfil.data.id
     const userData = await getUserData(userId)
-    res.json({ data: userData.data })
+    if (userData.data.length) {
+      res.json({ data: userData.data })
+    } res.json({ error: 'Sorry this user have no ranked informations' })
   } catch (error) {
-    console.log(error.response)
-    return error
+    res.json(error.response.data)
   }
 })
 
