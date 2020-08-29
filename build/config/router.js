@@ -31,7 +31,7 @@ var getUserData = function getUserData(userId) {
 };
 
 router.get('/', function (req, res) {
-  res.render('index');
+  res.json({ salutation: 'hello' });
 });
 
 router.get('/player', function () {
