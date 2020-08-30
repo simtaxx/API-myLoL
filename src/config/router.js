@@ -11,7 +11,7 @@ const getUser = (username) => axios.get(euUrl + playerIdUrl + username, { params
 const getUserData = (userId) => axios.get(euUrl + playerDataUrl + userId, { params: { api_key: apiKey  } })
 
 router.get('/', (req, res) => {
-  res.render('index')
+  res.json({ salutation: 'hello' })
 })
 
 router.get('/player', async (req, res) => {
